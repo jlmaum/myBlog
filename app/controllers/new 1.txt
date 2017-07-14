@@ -1,0 +1,3 @@
+class AddAssignerAndAssigneeReferenceToToItems < ActiveRecord::Migrant
+	def change
+		add_reference :todo_items, :user, foreign
